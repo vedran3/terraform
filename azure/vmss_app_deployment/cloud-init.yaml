@@ -1,0 +1,5 @@
+#cloud-config
+runcmd:
+  - sudo systemctl enable tomcat
+  - sudo systemctl start tomcat
+  - /usr/local/sbin/sudorule.sh ${sudoer_list}
